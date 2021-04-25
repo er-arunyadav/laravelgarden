@@ -30,4 +30,5 @@ Route::get('services', [ServiceController::class, 'index'])->name('services');
 Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
 Route::get('traits', [ServiceController::class, 'traits'])->name('traits');
 Route::get('solid-design-principles', [ServiceController::class, 'solid'])->name('solid');
-Route::get('pay', [PayOrderController::class, 'store']);
+Route::view('pay', 'topics.gateway');
+Route::post('pay/store', [PayOrderController::class, 'store'])->name('pay.store');

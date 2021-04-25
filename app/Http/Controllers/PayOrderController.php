@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class PayOrderController extends Controller
 {
-    public function store(OrderDetails $orderDetails, PaymentGatewayContract $paymentgateway)
+    public function store(Request $request, OrderDetails $orderDetails, PaymentGatewayContract $paymentgateway)
     {
         $orderDetails->all();
         return $paymentgateway->charge(2500);
