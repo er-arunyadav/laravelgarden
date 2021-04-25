@@ -19,6 +19,9 @@
                         <a href="{{ route('solid') }}">
                             <li class="list-group-item">SOLID Design Principles</li>
                         </a>
+                        <a href="{{ route('pay') }}">
+                            <li class="list-group-item">Multiple Payment Gateway Architecture</li>
+                        </a>
                     </ul>
                 </div>
             </div>
