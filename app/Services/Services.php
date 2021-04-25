@@ -3,7 +3,7 @@ namespace App\Services;
 
 use App\Interfaces\LedgerInterface;
 
-class Services implements LedgerInterface
+class Services
 {
     private $year;
 
